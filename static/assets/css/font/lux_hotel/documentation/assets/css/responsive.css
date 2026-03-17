@@ -1,0 +1,17 @@
+/*================================ 
+    #RESPONSIVE CSS 
+====================================*/
+/* Mobile Layout: 490px. */
+@media only screen and (max-width: 490px) {
+  .logo {
+    width: 50%;
+  }
+  .item {
+    padding: 30px;
+  }
+  .heading h1 {
+    font-size: 35px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

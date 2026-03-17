@@ -1,0 +1,153 @@
+footer {
+  background: #add1e3;
+  margin-top: clamp(32px, 2.5vw, 64px);
+
+  @include media-query(490px) {
+    margin-top: 64px;
+  }
+
+  .newsletter {
+    text-align: center;
+
+    .newsletter-container {
+      padding: clamp(20px, 1.667vw, 48px) clamp(12px, 1.25vw, 32px);
+      background: $accent-1;
+      border-radius: $br-24;
+      display: inline-flex;
+      align-items: center;
+      gap: $gap-16;
+      margin-top: -64px;
+
+      @include media-query(490px) {
+        flex-direction: column;
+      }
+
+      form {
+        position: relative;
+        width: clamp(380px, 21.563vw, 630px);
+
+        @include media-query(490px) {
+          width: 320px;
+        }
+
+        input {
+          background: transparent;
+          border: 2px solid $white;
+          color: $white;
+
+          &:focus {
+            color: $white !important;
+            background: transparent;
+          }
+
+          &:focus-visible {
+            color: $white !important;
+          }
+
+          &::placeholder {
+            color: $white !important;
+            font-weight: 400;
+          }
+        }
+
+        button {
+          font-weight: 500;
+          background: $accent-2;
+          position: absolute;
+          right: 6px;
+          top: 6.5px;
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    @include media-query(1099px) {
+      flex-wrap: wrap;
+      row-gap: $gap-20;
+    }
+
+    @include media-query(490px) {
+      flex-direction: column;
+      gap: $gap-40;
+    }
+
+    .parent-container {
+      display: flex;
+      align-items: start;
+      gap: $gap-16;
+
+      &.container-1 {
+        @include media-query(1099px) {
+          order: 2;
+        }
+        .footer-block {
+          @include media-query(1024px) {
+            width: 43.945vw;
+          }
+          @include media-query(490px) {
+            width: 350px;
+          }
+        }
+      }
+      &.container-2 {
+        @include media-query(1099px) {
+          order: 1;
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      &.container-3 {
+        @include media-query(1099px) {
+          order: 3;
+        }
+        .footer-block {
+          @include media-query(1024px) {
+            width: 30vw;
+          }
+          @include media-query(490px) {
+            width: 350px;
+          }
+        }
+      }
+
+      .footer-block {
+        width: clamp(310px, 22.865vw, 650px);
+        @include media-query(490px) {
+          width: 350px;
+        }
+
+        li {
+          .footer-icon {
+            width: clamp(16px, 1.25vw, 40px);
+            height: clamp(16px, 1.25vw, 40px);
+          }
+          a {
+            color: $black;
+            transition: $transition;
+          }
+
+          &:hover {
+            a {
+              color: $accent-1;
+              transition: $transition;
+            }
+          }
+        }
+      }
+
+      .logo-block {
+        padding-top: clamp(24px, 2.604vw, 72px);
+        width: clamp(380px, 21.563vw, 580px);
+
+        @include media-query(490px) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

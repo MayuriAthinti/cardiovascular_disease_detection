@@ -1,0 +1,39 @@
+
+.contact-section{
+    .contact-wrapper{
+        .form-container{
+            padding: clamp(16px, 1.25vw, 48px);
+            border-radius: $br-12;
+            background: $white;
+            height: 100%;
+            @include media-query(992px){
+                height: auto;
+            }
+           
+        }
+        .contact-text-container{
+            padding: clamp(16px, 1.25vw, 48px);
+            border-radius: $br-12;
+            background: $white;
+            height: 100%;
+            @include media-query(992px){
+                height: auto;
+            }
+            
+            .detail-block{
+                display: flex;
+                align-items: flex-start;
+                gap: $gap-12;
+                .icon-box{
+                    border-radius: $br-4;
+                    svg {
+                        width: clamp(18px, 1.25vw, 32px);
+                        height: clamp(18px, 1.25vw, 32px);
+                        margin-top: -4px;
+                    }
+                }
+            }
+        }
+    }
+
+}

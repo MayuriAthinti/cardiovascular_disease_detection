@@ -1,0 +1,174 @@
+/*---------------------------------------------"
+// Template Name: NovaCare
+// Description:  NovaCare Html Template
+// Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Responsive
+|___ Reset Styles
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+
+// FONT ==> Space Grotesk <==
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+// FONT ==> Inter <==
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/*-------------------------
+    Variables
+-------------------------*/
+/* Fonts */
+$font-primary: "Inter", sans-serif;
+$font-sec: "Space Grotesk", sans-serif;
+$font-awesome: "Font Awesome 6 Pro";
+
+/* Colors */
+$accent-1: #04409A; 
+$accent-2: #0072BB;
+$accent-3: #040441;
+$accent-4: #AC1717;
+$black: #0C0C0D;
+$medium-black: #1E1F20;
+$light-black: #141516;
+$dark-gray: #45474F;
+$light-gray: #92949F;
+$lightest-gray: #EAEAEC;
+$white: #FAFAFA;
+
+
+/* Transitions */
+$transition: all 0.3s ease-in-out;
+
+$box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
+
+/* Border-Radius */
+$br-4: clamp(2px, 0.208vw, 8px);
+$br-8: clamp(4px, 0.417vw, 16px);
+$br-10: clamp(5px, 0.521vw, 20px);
+$br-12: clamp(8px, 0.625vw, 24px);
+$br-14: clamp(10px, 0.729vw, 28px);
+$br-16: clamp(12px, 0.833vw, 32px);
+$br-18: clamp(14px, 0.938vw, 36px);
+$br-20: clamp(16px, 1.042vw, 40px);
+$br-24: clamp(18px, 1.25vw, 48px);
+$br-32: clamp(24px, 1.667vw, 64px);
+
+
+
+/* Gap */
+$gap-4: clamp(2px, 0.208vw, 8px);
+$gap-8: clamp(4px, 0.417vw, 16px);
+$gap-10: clamp(5px, 0.521vw, 20px);
+$gap-12: clamp(8px, 0.625vw, 24px);
+$gap-14: clamp(10px, 0.729vw, 28px);
+$gap-16: clamp(12px, 0.833vw, 32px);
+$gap-18: clamp(14px, 0.938vw, 36px)!important;
+$gap-20: clamp(16px, 1.042vw, 40px)!important;
+$gap-24: clamp(18px, 1.25vw, 48px)!important;
+$gap-32: clamp(24px, 1.667vw, 64px);
+$gap-38: clamp(28px, 1.979vw, 76px);
+$gap-40: clamp(32px, 2.083vw, 80px);
+$gap-48: clamp(40px, 2.5vw, 96px);
+$gap-64: clamp(48px, 3.333vw, 128px);
+
+
+/*-------------------------
+    Responsive Styles
+-------------------------*/
+@import "helpers/mixin";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+
+/*-------------------------
+Helpers
+-------------------------*/
+@import "helpers/classes";
+
+
+@import "helpers/spacing";
+
+/*-------------------------
+Elements
+-------------------------*/
+
+@import "elements/buttons";
+
+@import "elements/form";
+
+@import "elements/preloader";
+
+@import "elements/video";
+
+@import "elements/heading";
+
+@import "elements/dropdown";
+
+/*-------------------------
+  layouts
+-------------------------*/
+@import "layout/header";
+
+@import "layout/hero-banner";
+
+@import "layout/about";
+
+@import "layout/team";
+
+@import "layout/service";
+
+@import "layout/appointment";
+
+@import "layout/testimonials";
+
+@import "layout/inner-banner";
+
+@import "layout/brand-slider";
+
+@import "layout/faq";
+
+@import "layout/blogs";
+
+@import "layout/footer";
+
+@import "layout/title-banner";
+
+@import "layout/service-detail";
+
+@import "layout/sidebar";
+
+@import "layout/blog-detail";
+
+@import "layout/contact";
+
+@import "layout/404";
+
+@import "layout/coming-soon";
+
+
+
+
+
+
+
+
+
+

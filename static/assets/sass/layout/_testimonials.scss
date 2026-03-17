@@ -1,0 +1,35 @@
+.testimonials-section{
+    .testimonials-slider{
+        margin: -12px;
+        .slick-dots{
+            li{
+                width: 16px;
+                height: 4px;
+                background: $dark-gray;
+                border-radius: $br-20;
+                &.slick-active{
+                    width: 32px;
+                    background: $accent-2;                    
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+        .testimonials-block{
+            padding: clamp(12px, 1.25vw, 32px);
+            border-radius: $br-32;
+            box-shadow: $box-shadow;
+            margin: 12px;
+            .quote-image{
+                @include media-query(490px){
+                    width: 12%;
+                }
+            }
+            .user-image{
+                width: clamp(48px, 3.333vw, 120px);
+                height: clamp(48px, 3.333vw, 120px);
+            }
+        }
+    }   
+}

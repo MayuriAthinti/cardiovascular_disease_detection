@@ -1,0 +1,33 @@
+
+.error{
+    @include media-query(1024px){
+        height: 49.15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include media-query(820px){
+        height: 43.15vh;
+    }
+    @include media-query(490px){
+        height: 43.15vh;
+    }
+    .error-wrapper{
+        @include media-query(490px){
+            padding: 32px 16px;
+        }
+        h2{
+            font-size: clamp(120px, 20.833vw, 800px);
+            font-style: normal;
+            line-height: 80%; /* 720px */
+            letter-spacing: -18px;
+            text-transform: uppercase;
+            @include media-query(1024px){
+                letter-spacing: -8px;
+            }
+            @include media-query(490px){
+                letter-spacing: -4px;
+            }
+        }
+    }
+}

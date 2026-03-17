@@ -1,0 +1,334 @@
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul.list-style,
+ol.list-style {
+  padding: 0;
+}
+
+ul.list-style li::marker,
+ol.list-style li::marker {
+  color: $accent-1;
+}
+
+.unstyled {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  @media (min-width: 1200px) {
+    padding: 0 5vw;
+    width: 100%;
+  }
+
+  padding-right: calc(var(--bs-gutter-x)* .75);
+  padding-left: calc(var(--bs-gutter-x)* .75);
+
+  @media (max-width: 575px) {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+  }
+  
+}
+
+.page-content {
+  margin: clamp(14px, 1.198vw, 40px) 0;
+}
+
+
+/*-------------------------
+  Typography
+-------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $dark-gray;
+  background-color: $white;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: clamp(16px, 1.042vw, 24px); /* 20px */
+  font-weight: 400;
+  line-height: 150%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    @include media-query(490px){
+      width: 0;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: $accent-2;
+  }
+
+}
+.scroll-container{
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: unset;
+  transition: $transition;
+
+  &:hover {
+    color: $accent-2;
+    transition: $transition;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+p,
+pre,
+blockquote,
+table,
+hr {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    color: inherit;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: $medium-black;
+  margin-bottom: 0;
+}
+
+h1,
+.h1 {
+  font-family: $font-sec;
+  font-size: clamp(48px, 3.646vw, 120px) ; /* 70px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 96px */
+  letter-spacing: -2.1px;
+
+  @include media-query(1199px) {
+    font-size: clamp(46px, 4.17vw, 69px); /* 50px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(42px, 4.395vw, 61px); /* 45px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(36px, 5.122vw, 58px); /* 42px */
+  }
+}
+
+h2,
+.h2 {
+  font-family: $font-sec;
+  font-size: clamp(42px, 2.552vw, 72px); /* 49px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 66px */
+
+  @include media-query(1199px) {
+    font-size: clamp(36px, 3.503vw, 52px); /* 42px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(32px, 3.418vw, 52px); /* 35px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(28px, 3.902vw, 48px); /* 32px */
+  }
+
+}
+
+h3,
+.h3 {
+  font-family: $font-sec;
+  font-size: clamp(36px, 2.031vw, 61px); /* 39px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include media-query(1199px) {
+    font-size: clamp(30px, 2.836vw, 48px); /* 34px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(30px, 3.125vw, 46px); /* 32px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(25px, 3.415vw, 38px); /* 28px */
+  }
+}
+
+h4,
+.h4 {
+  font-family: $font-sec;
+  font-size: clamp(27px, 1.615vw, 48px);  /* 31px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 42px */
+
+  @include media-query(1199px) {
+    font-size: clamp(23px, 2.168vw, 40px); /* 26px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(26px, 2.734vw, 42px); /* 28px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(22px, 2.683vw, 30px); /* 22px */
+  }
+}
+
+h5,
+.h5 {
+  font-family: $font-sec;
+  font-size: clamp(22px, 1.302vw, 38px); /* 25px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 33.6px */
+
+  @include media-query(1199px) {
+    font-size: clamp(19px, 1.751vw, 32px); /* 21px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(22px, 2.344vw, 30px); /* 24px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(19px, 2.317vw, 22px); /* 19px */
+  }
+}
+
+h6,
+.h6 {
+  font-family: $font-sec;
+  font-size: clamp(18px, 1.042vw, 32px); /* 20px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 27.6px */
+
+  @include media-query(1199px) {
+    font-size: clamp(16px, 1.501vw, 24px); /* 18px */
+  }
+
+  @include media-query(1024px) {
+    font-size: clamp(18px, 1.855vw, 26px); /* 19px */
+  }
+
+  @include media-query(820px) {
+    font-size: clamp(17px, 1.951vw, 20px); /* 16px */
+  }
+
+}
+
+.text-20,p {
+  font-family: $font-primary;
+  font-size: clamp(16px, 1.042vw, 24px); /* 20px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21.6px */
+}
+
+.lead {
+  font-family: $font-primary;
+  font-size: clamp(16px, 0.938vw, 20px); /* 18px */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21.6px */
+}
+
+.eyebrow {
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-size: clamp(14px, 0.833vw, 22px); /* 16px */
+  font-family: $font-primary;
+  font-weight: 600;
+  line-height: 120%;
+
+  /* 24px */
+  @include media-query(1199px) {
+    font-size: clamp(15px, 1.418vw, 21px);
+  }
+
+}
+
+.subtitle{
+  font-size: clamp(13px, 0.729vw, 18px); /* 14px */
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; 
+  
+}
+
+.caption{
+  font-size: clamp(12px, 0.677vw, 16px);  /* 13px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; 
+  @include media-query(1499px){
+    font-size: 13px;
+  }
+}
+
+span {
+  display: inline-block;
+}
+
+b,
+strong {
+  font-family: $font-primary;
+}
+
+.hr-line{
+  width: 100%;
+  height: 1px;
+  background: $lightest-gray;
+}

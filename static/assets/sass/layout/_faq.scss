@@ -1,0 +1,77 @@
+// Faq 
+.faq-section {
+    .faq-form{
+        height: 100%;
+    }
+    .faq-block {
+        padding: 17.75px 16px;
+        padding-right: 26px;
+        background: $white;
+        border-radius: $br-12;
+        margin-bottom: clamp(12px, 1.25vw, 32px);
+        box-shadow: $box-shadow;
+        padding-right: 32px;
+
+        .accordion-button {
+            margin: 0;
+            position: relative;
+            padding: 0;
+            font-family: $font-sec;
+            font-weight: 500;
+            font-size: clamp(16px, 1.042vw, 32px); /* 20px */
+            line-height: 120%;
+            padding-right: 32px;
+
+            @include media-query(490px){
+                padding-right: 40px;
+            }
+            &.collapsed {
+                border-radius: 0px;
+                padding: 0;
+                background: none;
+                margin: 0;
+                @include media-query(490px){
+                    padding-right: 40px;
+                }
+                
+
+                &::after {
+                    background-image: none !important;
+                    color: $light-black;
+                    content: "\f067";
+                    font-family: $font-awesome;
+                }
+            }
+
+            &:not(.collapsed) {
+                color: $black;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+            }
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+            }
+
+            &::after {
+                content: "\f068";
+                font-family: $font-awesome;
+                background-image: none !important;
+                position: absolute;
+                right: -16px;
+                font-weight: 300;
+                font-size: 24px;
+                cursor: pointer;
+
+            }
+        }
+
+        .accordion-collapse {
+            p {
+                margin-top: clamp(32px, 2.5vw, 64px);
+            }
+        }
+    }
+}

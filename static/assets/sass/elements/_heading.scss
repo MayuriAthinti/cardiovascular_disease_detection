@@ -1,0 +1,34 @@
+
+.heading{
+    .eyebrow-heading{
+        position: relative;
+        display: inline-block;
+        @include media-query(490px){
+            margin-bottom: 16px;
+        }
+
+        &::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background: $accent-4;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+        &::after{
+            content: '';
+            background: url('../media/vector/line-2.png');
+            background-position: bottom left;
+            width: 48px;
+            height: 37px;
+            position: absolute;
+            right: -48px;
+            bottom: -11px;
+        }
+    }
+    h2{
+        font-weight: 700;
+    }
+}

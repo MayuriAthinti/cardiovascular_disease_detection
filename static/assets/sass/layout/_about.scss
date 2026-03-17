@@ -1,0 +1,25 @@
+
+.about-section{
+    .about-content{
+        .about-block{
+            display: flex;
+            align-items: center;
+            gap: $gap-24;
+            .about-icon{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                width: clamp(54px, 4.167vw, 120px);
+                height: clamp(54px, 4.167vw, 120px);
+                border-radius: 50%;
+                background: $accent-2;
+                img{
+                    width: clamp(32px, 2.813vw, 72px);
+                    height: clamp(32px, 2.813vw, 72px);
+                }
+            }
+            
+        }  
+    }
+}

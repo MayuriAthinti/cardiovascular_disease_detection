@@ -1,0 +1,36 @@
+
+.hero-banner{
+    background: url('../media/hero/hero-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    position: relative;
+    @include media-query(1024px){
+        background: url('../media/hero/hero-ipad.png') no-repeat;
+        background-position: center;
+    }
+    @include media-query(820px){
+        background-position: inherit;
+    }
+    @include media-query(490px){
+        background: url('../media/hero/hero-mobile.png') no-repeat;
+        background-position: top;
+    }
+
+    .hero-wrapper{
+        margin-top: -9.792vw;
+        @include media-query(1399px){
+            margin-top: -32px;
+        }
+        .life-line{
+            width: 12.812vw;
+            height: 2.604vw;
+            @include media-query(490px){
+                width: 35%;
+                height: 100%;
+            }
+        }
+    }
+}

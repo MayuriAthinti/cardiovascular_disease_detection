@@ -1,0 +1,155 @@
+.team-block {
+    position: relative;
+    cursor: pointer;
+    margin: -20px -20px 0 -20px;
+
+    .team-image {
+        position: relative;
+        border-radius: $br-16;
+        box-shadow: $box-shadow;
+        margin: 20px;
+        overflow: hidden;
+
+        &.shine {
+            &::before {
+                background: linear-gradient(to right,
+                        fade_out(#fff, 1) 0%,
+                        fade_out(#fff, 0.7) 100%);
+                content: "";
+                display: block;
+                height: 100%;
+                left: -75%;
+                position: absolute;
+                top: 0;
+                transform: skewX(-25deg);
+                width: 50%;
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            @keyframes shine {
+                100% {
+                    left: 125%;
+                }
+            }
+        }
+
+        .social-plateform {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 20px;
+            z-index: 5;
+            right: -24px;
+            gap: 8px;
+            -webkit-transition: .4s ease-out;
+            -moz-transition: .4s ease-out;
+            -ms-transition: .4s ease-out;
+            -o-transition: .4s ease-out;
+            transition: .4s ease-out;
+
+            li {
+                transition: .5s;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateX(30px);
+
+                a {
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    transition: $transition;
+                    padding: 4px;
+
+                    svg {
+                        path {
+                            fill: $accent-1;
+                            transition: $transition;
+                        }
+                    }
+                }
+
+                &:hover {
+                    a {
+                        svg {
+                            path {
+                                fill: $medium-black;
+                                transition: $transition;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cus-btn{
+            position: absolute;
+            left: 50%;
+            bottom: -48px;
+            transform: translate(-50%, 10px);
+            transition: $transition;
+        }
+    }
+
+    .team-content {
+        text-align: center;
+        padding-top: clamp(4px, 0.417vw, 12px);
+        .h5 {
+            color: $medium-black;
+            transition: $transition;
+        }
+    }
+
+    &:hover {
+        .team-image {
+            &.shine {
+
+                &:hover,
+                &:focus {
+                    &::before {
+                        animation: shine 1s;
+                    }
+                }
+            }
+
+            .social-plateform {
+                right: 20px;
+                transition: $transition;
+
+                li {
+                    transform: none;
+                    transition: .5s;
+                    opacity: 1;
+                    visibility: visible;
+
+                    &:nth-child(1) {
+                        transition-delay: 0.1s;
+                    }
+
+                    &:nth-child(2) {
+                        transition-delay: 0.2s;
+                    }
+
+                    &:nth-child(3) {
+                        transition-delay: 0.3s;
+                    }
+
+                    &:nth-child(4) {
+                        transition-delay: 0.4s;
+                    }
+                }
+            }
+            .cus-btn{
+                bottom: 24px;
+                transition: $transition;
+            }
+        }
+
+        .team-content {
+            .h5 {
+                color: $accent-1;
+                transition: $transition;
+            }
+        }
+    }
+}

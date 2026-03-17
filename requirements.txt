@@ -1,0 +1,64 @@
+###anaconda 3 (2023.03-1) Python 3.10.9
+####-----------------------------------------
+
+### to Avoid Conflict error try to install one by one
+####----------------------------------------------------
+
+albumentations==1.4.8
+backports.tarfile==1.2.0
+beautifulsoup4==4.11.1
+catboost==1.2.7
+eli5==0.13.0
+Flask==1.1.1
+gensim==4.3.0
+googletrans==4.0.0rc1
+h5py==3.7.0
+imutils==0.5.4
+imbalanced-learn==0.10.1
+itsdangerous==2.0.1
+joblib==1.1.1
+Keras==2.10.0
+Keras-Preprocessing==1.1.2
+keras-tuner==1.4.7
+lightgbm==4.5.0
+llvmlite==0.39.1
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib==3.7.0
+numba==0.56.4
+numpy==1.23.5
+nltk==3.7
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
+pandas==1.5.3
+pickleshare==0.7.5
+pillow==11.0.0
+protobuf==3.20.0
+pycocotools==2.0.8
+scikit-learn==1.0.2
+scikit-image==0.24.0
+scipy==1.10.0
+seaborn==0.12.2
+setuptools==71.0.0
+spacy==3.8.2
+split-folders==0.5.1
+SQLAlchemy==1.4.39
+tokenizers==0.11.4
+tensorflow==2.10.1
+transformers==4.9.2
+tqdm==4.67.0
+ultralytics==8.3.6
+urllib3==1.26.14
+werkzeug==2.2.2
+xgboost==2.1.2
+
+#Torch GPU Version:
+#if cuda 11 or less than 12 below torch need to use
+#torch gpu low version:
+#------------
+##pip install torch==1.13.1+cu117 torchvision>=0.13.1+cu117 torchaudio>=0.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --##no-cache-dir
+
+#if cuda 12.4 or above below torch need to use
+#torch gpu latest version:
+#----------------------------
+##pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu124

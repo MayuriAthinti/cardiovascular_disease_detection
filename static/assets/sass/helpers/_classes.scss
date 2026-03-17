@@ -1,0 +1,220 @@
+// Text Colors
+.color-primary {
+  color: $accent-1 !important;
+}
+
+.color-sec {
+  color: $accent-2 !important;
+}
+
+.color-ter {
+  color: $accent-3 !important;
+}
+
+.color-quat {
+  color: $accent-4 !important;
+}
+
+.black {
+  color: $black !important;
+}
+
+.medium-black {
+  color: $medium-black !important;
+}
+
+.light-black {
+  color: $light-black !important;
+}
+
+.dark-gray {
+  color: $dark-gray !important;
+}
+
+.light-gray {
+  color: $light-gray !important;
+}
+
+.lightest-gray {
+  color: $lightest-gray !important;
+}
+
+.light-white {
+  color: $white !important;
+}
+
+.white {
+  color: $white ;
+}
+
+
+// Background Colors
+.bg-primary {
+  background: $accent-1 !important;
+}
+
+.bg-sec {
+  background: $accent-2 !important;
+}
+
+.bg-ter {
+  background: $accent-3 !important;
+}
+.bg-quat {
+  background: $accent-4 !important;
+}
+
+.bg-black {
+  background: $black !important;
+}
+
+.bg-medium-black {
+  background: $medium-black !important;
+}
+
+.bg-light-black {
+  background: $light-black !important;
+}
+
+.bg-dark-gray {
+  background: $dark-gray !important;
+}
+
+.bg-light-gray {
+  background: $light-gray !important;
+}
+
+.bg-lightest-gray {
+  background: $lightest-gray !important;
+}
+
+.bg-light-white {
+  background: $white !important;
+}
+
+.bg-white {
+  background: $white !important;
+}
+.bg-white-bordered {
+  background: $white;
+  border: 1px solid $lightest-gray;
+  border-radius: $br-12;
+}
+
+.box-shadow{
+  box-shadow: $box-shadow;
+}
+// ------------- Font Weight -------------- //
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.font-primary{
+  font-family: $font-primary;
+}
+.font-sec{
+  font-family: $font-sec;
+}
+
+// ------------- Border Radius -------------- //
+
+.br-4{
+  border-radius: $br-4;
+}
+.br-8{
+  border-radius: $br-8;
+}
+.br-10{
+  border-radius: $br-10;
+}
+.br-12{
+  border-radius: $br-12;
+}
+.br-14{
+  border-radius: $br-14;
+}
+.br-16{
+  border-radius: $br-16;
+}
+.br-18{
+  border-radius: $br-18;
+}
+.br-20{
+  border-radius: $br-20;
+}
+.br-24{
+  border-radius: $br-24;
+}
+.br-32{
+  border-radius: $br-32;
+}
+
+// ------------- Gap -------------- //
+
+.gap-4{
+  $gap-4: clamp(2px, 0.208vw, 8px);
+}
+.gap-8{
+  $gap-8: clamp(4px, 0.417vw, 16px);
+}
+.gap-10{
+  $gap-10: clamp(5px, 0.521vw, 20px);
+}
+.gap-12{
+  $gap-12: clamp(8px, 0.625vw, 24px);
+}
+.gap-14{
+  $gap-14: clamp(10px, 0.729vw, 28px);
+}
+.gap-16{
+  $gap-16: clamp(12px, 0.833vw, 32px);
+}
+.gap-18{
+  $gap-18: clamp(14px, 0.938vw, 36px);
+}
+.gap-20{
+  $gap-20: clamp(16px, 1.042vw, 40px);
+}
+.gap-24{
+  $gap-24: clamp(18px, 1.25vw, 48px);
+}
+.gap-32{
+  $gap-32: clamp(24px, 1.667vw, 64px);
+}
+.gap-38{
+  $gap-38: clamp(28px, 1.979vw, 76px);
+}
+.gap-48{
+  $gap-48: clamp(10px, 2.5vw, 28px);
+}
+.gap-64{
+  $gap-64: clamp(48px, 3.333vw, 128px);
+}
+
+
+

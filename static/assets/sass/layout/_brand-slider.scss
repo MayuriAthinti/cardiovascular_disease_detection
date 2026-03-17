@@ -1,0 +1,29 @@
+.brand-section {
+  .brand-slider {
+    margin: -12px;
+    @include media-query(1024px) {
+      margin: 0;
+    }
+    .brand-block {
+      width: clamp(220px, 13.958vw, 350px) !important;
+      height: clamp(80px, 5.208vw, 150px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: $box-shadow;
+      border-radius: $br-10;
+      margin: 12px;
+      @include media-query(490px) {
+        padding: 6px;
+        width: 150px !important;
+        height: 54.5px;
+      }
+      img {
+        @include media-query(490px) {
+          width: 46%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

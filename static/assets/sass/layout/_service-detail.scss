@@ -1,0 +1,20 @@
+.services-detail{
+    .services-container{
+        display: flex;
+        align-items: center;
+        gap: $gap-12;
+        .service-icon{
+            width: clamp(40px, 2.813vw, 64px);
+            height: clamp(40px, 2.813vw, 64px);
+            border-radius: 50%;
+            background: $accent-1;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: clamp(28px, 1.875vw, 40px);
+                height: clamp(28px, 1.875vw, 40px);
+            }
+        }
+    }
+}

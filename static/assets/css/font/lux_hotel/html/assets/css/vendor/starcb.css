@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.star-cb-group * {
+  font-size: 1rem;
+}
+
+.star-cb-group > input {
+  display: none;
+}
+
+.star-cb-group label {
+  margin: 0;
+  height: 34px;
+  font-size: 30px;
+  margin-top: -5px;
+}
+
+.star-cb-group > input + label {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  line-height: 48px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "☆";
+  color: #3CBC1C;
+}
+
+.star-cb-group > input:checked ~ label:before,
+.star-cb-group > input + label:hover ~ label:before,
+.star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #3CBC1C;
+  text-shadow: 0 0 1px #3CBC1C;
+}
+
+.star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: 0.5em;
+  margin-left: -0.5em;
+}
+
+.star-cb-group > .star-cb-clear + label:before {
+  width: 0.5em;
+}
+
+.star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: #3CBC1C;
+  text-shadow: none;
+}
+
+.star-cb-group:hover > input + label:hover ~ label:before,
+.star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #3CBC1C;
+  text-shadow: 0 0 1px #3CBC1C;
+}
+
+/*# sourceMappingURL=starcb.css.map */

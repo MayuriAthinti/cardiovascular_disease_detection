@@ -1,0 +1,473 @@
+/*----------------------------------------*/
+/*  Button CSS START
+/*----------------------------------------*/
+.cus-btn {
+	position: relative;
+	overflow: hidden;
+	background: $accent-1;
+	border: 1px solid $accent-1;
+	color: $white;
+	display: inline-flex;
+  justify-content: center;
+	font-size: clamp(14px, 0.938vw, 22px);
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+	padding: clamp(14px, 0.964vw, 24px) clamp(20px, 1.667vw, 48px);
+	text-decoration: none;
+  border-radius: $br-8;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  &.small-padding{
+    padding: clamp(10px, 0.755vw, 24px) clamp(20px, 1.667vw, 48px);
+  }
+  &.newsletter-btn{
+    padding: clamp(8px, 0.547vw, 16px) clamp(12px, 0.833vw, 32px);
+  }
+	span {
+		&:first-child {
+			position: relative;
+			transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 10;
+		}
+		&:last-child {
+			color: $accent-1;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 100;
+			opacity: 0;
+			top: 50%;
+			left: 50%;
+			transform: translateY(225%) translateX(-50%);
+			height: 14px;
+			line-height: 13px;
+      width: 100%;
+      text-align: center;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $white;
+    border: 0;
+		transform-origin: bottom center;
+		transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+		transform: skewY(9.3deg) scaleY(0);
+		z-index: 50;
+	}
+	&:hover {
+    border: 1px solid $accent-1;
+		&:after {
+			transform-origin: bottom center;
+			transform: skewY(6.3deg) scaleY(2);
+		}
+		span {
+			&:last-child {
+				transform: translateX(-50%) translateY(-50%);
+				opacity: 1;
+				transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+			}
+		}
+	}
+}
+.cus-btn-2 {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid $accent-4;
+	color: $accent-4;
+	display: inline-flex;
+  justify-content: center;
+	font-size: clamp(14px, 0.938vw, 22px);
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+	padding: clamp(14px, 0.964vw, 24px) clamp(20px, 1.667vw, 48px);
+	text-decoration: none;
+  border-radius: $br-8;
+	cursor: pointer;
+	background: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  &.small-padding{
+    padding: clamp(10px, 0.755vw, 24px) clamp(20px, 1.667vw, 48px);
+  }
+  
+	span {
+		&:first-child {
+			position: relative;
+			transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 10;
+		}
+		&:last-child {
+			color: $white;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 100;
+			opacity: 0;
+			top: 50%;
+			left: 50%;
+			transform: translateY(225%) translateX(-50%);
+			height: 14px;
+			line-height: 13px;
+      width: 100%;
+      text-align: center;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $accent-4;
+    border: 0;
+		transform-origin: bottom center;
+		transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+		transform: skewY(9.3deg) scaleY(0);
+		z-index: 50;
+    
+	}
+	&:hover {
+    border: 1px solid $accent-4;
+		&:after {
+			transform-origin: bottom center;
+			transform: skewY(6.3deg) scaleY(2);
+		}
+		span {
+			&:last-child {
+				transform: translateX(-50%) translateY(-50%);
+				opacity: 1;
+				transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+			}
+		}
+	}
+}
+.cus-btn-3 {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid $accent-4;
+	color: $white;
+	display: inline-flex;
+  justify-content: center;
+	font-size: clamp(14px, 0.938vw, 22px);
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+	padding: clamp(14px, 0.964vw, 24px) clamp(20px, 1.667vw, 48px);
+	text-decoration: none;
+  border-radius: $br-8;
+	cursor: pointer;
+	background: $accent-4;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  &.small-padding{
+    padding: clamp(10px, 0.755vw, 24px) clamp(20px, 1.667vw, 48px);
+  }
+	span {
+		&:first-child {
+			position: relative;
+			transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 10;
+		}
+		&:last-child {
+			color: $accent-4;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+			z-index: 100;
+			opacity: 0;
+			top: 50%;
+			left: 50%;
+			transform: translateY(225%) translateX(-50%);
+			height: 14px;
+			line-height: 13px;
+      width: 100%;
+      text-align: center;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $white;
+    border: 0;
+		transform-origin: bottom center;
+		transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+		transform: skewY(9.3deg) scaleY(0);
+		z-index: 50;
+    
+	}
+	&:hover {
+    border: 1px solid $accent-4;
+    color: $accent-4;
+		&:after {
+			transform-origin: bottom center;
+			transform: skewY(6.3deg) scaleY(2);
+		}
+		span {
+			&:last-child {
+				transform: translateX(-50%) translateY(-50%);
+				opacity: 1;
+				transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+			}
+		}
+	}
+}
+
+.cus-arrow-btn{
+  display: flex;
+  align-items: center;
+  gap: $gap-8;
+  color: $black;
+  transition: $transition;
+  svg{
+    path{
+      transition: $transition;
+    }
+  }
+  &:hover{
+    transition: 0.2s ease-in-out;
+    color: $accent-1;
+    gap: $gap-12;
+    svg{
+      path{
+        fill: $accent-1;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+/*----------------------------------------*/
+/* scroll to top
+/*----------------------------------------*/
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* Initially hidden */
+  background-color: $accent-2;
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 19px;
+  transition: $transition;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: $black;
+    transition: $transition;
+    background-color: $accent-1;
+  }
+  
+  &.show {
+    display: block; /* Show when the 'show' class is added */
+  }
+}
+
+// SLIDER ARROWS
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: $gap-16;
+
+  .arrow-btn {
+    width: clamp(32px, 2.5vw, 64px);
+    height: clamp(32px, 2.5vw, 64px);
+    border-radius: $br-4;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    transition: $transition;
+    border: 1px solid $lightest-gray;
+
+    svg {
+      width: clamp(24px, 1.667vw, 64px);
+      height: clamp(25px, 1.719vw, 64px);
+      transition: $transition;
+      path{
+        stroke: $black;
+        transition: $transition;
+      }
+    }
+
+    &:hover {
+      transition: $transition;
+      background-color: $accent-1;
+      path{
+        stroke: $white;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+// SOCIAL ICONS
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: $gap-24;
+
+
+  &.icon-v2{
+    gap: $gap-12 !important;
+    li{
+      svg{
+        path{
+          fill: $accent-1;
+          transition: $transition;
+        }
+      }
+      &:hover {
+        svg {
+          path{
+            fill: $medium-black;
+            transition: $transition;
+          }
+        }
+      }
+    }
+  }
+
+  li {
+    a {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: $transition;
+
+      svg {
+        width: clamp(20px, 1.25vw, 48px);
+        height: clamp(20px, 1.25vw, 48px);
+        path{
+          transition: $transition;
+        }
+      }
+
+      &:hover {
+        svg {
+          path{
+            fill: $accent-2;
+            transition: $transition;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===================  PAGINATIONS =================== // 
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+
+  #border-pagination {
+    display: flex;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline;
+
+      span {
+        color: $dark-gray;
+        transition: $transition;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $black;
+        width: clamp(36px, 2.5vw, 64px);
+        height: clamp(36px, 2.5vw, 64px);
+        border-radius: 4px;
+        border: 1px solid $lightest-gray;
+        background: $white;
+        float: left;
+        transition: $transition;
+        font-family: $font-sec;
+        font-size: clamp(16px, 0.938vw, 22px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21.6px */
+        @include media-query(399px){
+          font-size: 14px;
+        }
+
+        svg {
+          path {
+            stroke: $black;
+            transition: $transition;
+          }
+        }
+
+        &.active {
+          background-color: $accent-1;
+          color: $white;
+          border: 1px solid $accent-1;
+
+          svg {
+            path {
+              stroke: $white;
+              transition: $transition;
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $accent-1;
+          color: $white;
+          border: 1px solid $accent-1;
+
+          svg {
+            path {
+              stroke: $white;
+              transition: $transition;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        span {
+          color: $white;
+          transition: $transition;
+        }
+      }
+    }
+  }
+}

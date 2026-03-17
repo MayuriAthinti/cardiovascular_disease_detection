@@ -1,0 +1,10 @@
+
+.banner-wrapper{
+    background: url('../media/backgrounds/inner-banner.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: $br-32;
+    box-shadow: $box-shadow;
+    padding: clamp(64px, 5.625vw, 180px) clamp(48px, 5vw, 150px);
+    
+}
